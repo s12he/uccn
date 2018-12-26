@@ -1,0 +1,266 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.marginAuto {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+}
+@keyframes slowScale {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+/*头部导航*/
+.header-bg {
+	background-image: url(../../assets/images/index/1.png);
+}
+.headerBox {
+	margin-top: 66px;
+}
+.logo {
+	font-size: 26px;
+	margin-right: 100px;
+}
+.m {
+	position: relative;
+	line-height: 34.5px;
+	margin: 0 10px;
+}
+.m>a {
+	font-size: 18px;
+	padding: 0 10px;
+	color: #fff;
+	opacity: .5;
+	cursor: pointer;
+}
+.on>a {
+	opacity: 1;
+}
+.hiddenBox {
+	display: none;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.hiddenBox li {
+	text-align: center;
+	background: rgba(0, 0, 0, .5);
+}
+.hiddenBox li:hover {
+	background: rgba(0, 0, 0, .6);
+}
+.hiddenBox li:hover a {
+	opacity: 1;
+}
+.hiddenBox li a {
+	color: #fff;
+	opacity: .5;
+	font-size: 15px;
+}
+.headerText {
+	margin-top: 15%;
+	text-align: center;
+	position: relative;
+}
+.headerText .title, .titleAll {
+	font-size: 58px;
+	display: inline-block;
+	margin-bottom: 50px;
+	letter-spacing: 17px;
+}
+.headerText .text {
+	display: inline-block;
+	padding: 0 105px;
+	font-size: 31px;
+	letter-spacing: 5px;
+	text-align: left;
+	font-weight: lighter;
+}
+.arrows {
+	position: absolute;
+	bottom: -20%;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+.arrows i {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border-right: 2px solid #CCCACA;
+	border-bottom: 2px solid #CCCACA;
+	transform: rotate(45deg);
+}
+/*服务类型*/
+.serve-bg {
+	background-image: url(../../assets/images/index/2.png);
+}
+.details {
+	position: absolute;
+	text-align: left;
+	width: 540px;
+}
+.serveBox {
+	top: 31.2%;
+	left: 39.8%;
+}
+.titleAll {
+	margin-bottom: 0;
+}
+.enAll {
+	font-size: 25px;
+	letter-spacing: 6px;
+	font-weight: lighter;
+}
+.hr {
+	height: 1px;
+	margin: 25px 0 ;
+	background: #fff;
+}
+.details .text {
+	font-size: 30px;
+	letter-spacing: 6px;
+	font-weight: lighter;
+}
+/*国内业务*/
+.business-bg {
+	background-image: url(../../assets/images/index/3.png);
+}
+.businessBox {
+	top: 35%;
+	left: 54%;
+}
+/*加入我们*/
+.about-bg {
+	background-image: url(../../assets/images/index/4.png);
+	height: 60%;
+}
+.about-bg {
+	position: relative;
+}
+.aboutBox {
+	top: 24%;
+	left: 10.75%;
+}
+.aboutBox .hr {
+	margin: 60px 0 20px 0;
+}
+/*右侧小方块重置*/
+.swiper-pagination-bullet {
+	width: 15px !important;
+	height: 15px !important;
+	border-radius: 0 !important;
+	background: none !important;
+	border: 2px solid #fff !important;
+	margin: 18px 0 !important;
+	opacity: 1 !important;
+	transform: rotate(-45deg) !important;
+}
+.swiper-pagination-bullet-active {
+	background: #fff !important;
+}
+.swiper-slide-active .animateBg {
+	animation: slowScale 6s forwards !important;
+}
+/*底部*/
+footer {
+	height: 40%;
+	background: #101926;
+	text-align: center;
+}
+footer .title {
+	padding: 20px 0 10px 0;
+	font-size: 30px;
+	letter-spacing: 6px;
+	font-weight: lighter;
+}
+.footerNav {
+	text-align: center;
+}
+.footerNav li {
+	display: inline-block;
+}
+.footerNav a {
+	padding: 0 22px;
+    color: #fff;
+    opacity: .8;
+}
+.address {
+	margin-top: 30px;
+	border-top: 1px solid #fff;
+}
+.top {
+	position: absolute;
+	top: -60%;
+	left: 4%;
+	font-size: 20px;
+	cursor: pointer;
+}
+.trigon {
+	display: inline-block;
+	width: 15px;
+	height: 1px;
+	background: #fff;
+	position: relative;
+}
+.trigon::before, .trigon::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	top: 0;
+	left: 0;
+	transform-origin: 0 0;
+	transform: rotate(-60deg);
+}
+.trigon::after {
+	transform-origin: 100% 0;
+	transform: rotate(60deg);
+}
+.address .marginAuto {
+	margin-top: 25px;
+	margin-bottom: 12px;
+	justify-content: space-around;
+	align-items: center;
+}
+.address .left, .right>div {
+	text-align: left;
+}
+.left a {
+	color: #fff;
+}
+.left p {
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: 400;
+}
+.right img {
+	margin-right: 15px;
+}
+.right {
+	align-items: flex-end;
+}
+.filing {
+	color: #fff;
+}

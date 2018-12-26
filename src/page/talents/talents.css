@@ -1,0 +1,218 @@
+/*banner图*/
+.banner {
+	width: 100%;
+	max-height: 500px;
+}
+@media screen and (min-width: 1919px){
+   .banner {
+      height: 500px;
+   }
+}
+.banner img {
+	width:100%;
+	height: 100%;
+	display: block;
+}
+/*招聘咨询*/
+.about.marginAuto {
+	width: 1200px;
+	margin: 85px auto;
+	text-align: center;
+}
+.about .title {
+	color: #4D4D4D;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+.about .title-en {
+	color: #808080;
+	font-size: 25px;
+	letter-spacing: 4px;
+}
+.hr {
+	height: 2px;
+	background: #999999;
+	margin-top: 100px;
+}
+.recruitBox {
+	padding: 40px 0 30px 0;
+	border-bottom: 1px solid #D0D0D0;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.recruitBox>img {
+	width: 86px;
+	height: 60px;
+}
+.new-recruit {
+	flex-shrink: 0;
+	width: 180px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 6px;
+	margin-right: 40px;
+	background: linear-gradient(to bottom, #0B86DF, #0155D9);
+}
+.slideText {
+	flex: 1;
+	margin-left: 20px;
+	color: #666;
+	line-height: 60px;
+	font-size: 24px;
+}
+.tempWrap {
+	width: 100% !important;
+}
+/*招聘岗位*/
+.post {
+	height: 600px;
+	width: 30%;
+	background: #01469A;
+	position: relative;
+}
+.postList {
+	position: absolute;
+	right: 0;
+	top: 80px;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.postItem {
+	height: 50px;
+	line-height: 50px;
+	width: 140px;
+	background: #5C8FCC;
+	font-size: 20px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.postItem.on {
+	width: 160px;
+	height: 60px;
+	line-height: 60px;
+	background: #E6E6E6;
+	color: #003371;
+	font-size: 24px;
+}
+/*招聘详情*/
+.tab-content {
+	width: 470px;
+	padding: 10px 40px 0 40px;
+	color: #868686;
+	text-align: left;
+}
+.tab-item {
+	margin-bottom: 15px;
+}
+.tab-item>div {
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.tab-item div span {
+	font-size: 28px;
+}
+
+.tab-item p, .tab-item div i {
+	font-size: 14px;
+}
+.tab-item div i {
+	height: 15px;
+}
+.weal {
+	line-height: 1.6;
+	letter-spacing: 1px;
+	margin-top: 3px;
+}
+.tab-main {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.paging {
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+}
+.paging li {
+	font-size: 12px;
+	cursor: pointer;
+}
+.paging ul {
+	align-items: center;
+}
+.num {
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	margin-right: 2px;
+}
+.prev1 {
+	margin-right: 20px;
+}
+.next1 {
+	margin-left: 20px;
+}
+.num.active {
+	background: #003371;
+	color: #fff;
+}
+/*热门职位*/
+.recruit-r {
+	flex: 1;
+}
+.recruit-r>div {
+	height: 50%;
+}
+.recruit-r .title {
+	height: 60px;
+	line-height: 60px;
+	background: #01469A;
+	font-size: 30px;
+	color: #fff;
+}
+.hot ul, .slide {
+	border: 1px solid #B5B5B5;
+	height: 240px;
+}
+.slide {
+	border-top: none;
+}
+.common .content {
+	height: 60px;
+	line-height: 60px;
+	padding: 0 34px 0 20px;
+	overflow: hidden;
+}
+.hot .content {
+	border-bottom: 1px solid #B5B5B5;
+}
+.long .content {
+	border-top: 1px solid #B5B5B5;
+}
+.content span {
+	color: #01469A;
+	font-size: 20px;
+}
+.content i:nth-of-type(1) {
+	font-size: 20px;	
+	color: #747474;
+}
+.content i:nth-of-type(2) {	
+	font-size: 14px;	
+	letter-spacing: 1px;
+	color: #747474;
+}
+.content em {
+	color: #747474;
+	font-size: 10px;
+	/*line-height: 15px;*/
+}
+.hot .content:nth-of-type(4) {
+	border-bottom: none;
+}

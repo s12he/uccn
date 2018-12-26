@@ -1,0 +1,48 @@
+body {
+	font-size: 14px;
+}
+.marginAuto {
+	width: 1020px;
+	margin: 0 auto;
+}
+/*顶部导航*/
+header {
+	background: #003371;
+}
+.headerNav {
+	margin-left: 15.294%;
+	min-width: 600px;
+}
+.headerNav a {
+	color: #fff;
+	opacity: .5;
+}
+.m {
+	height: 80px;
+	line-height: 80px;
+	margin: 0 18px;
+	padding: 0 6px;
+	position: relative;
+}
+.m.on>a {
+	opacity: 1;
+}
+.hiddenBox {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	background: #003371;
+}
+.hiddenBox li {
+	line-height: 25px;
+}
+.hiddenBox li a {
+	opacity: .9;
+}
+.hiddenBox li:hover a {
+	opacity: 1;
+}
