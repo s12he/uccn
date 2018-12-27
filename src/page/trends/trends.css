@@ -1,0 +1,74 @@
+/*banner图*/
+.banner {
+	width: 100%;
+	max-height: 500px;
+}
+@media screen and (min-width: 1919px){
+   .banner {
+      height: 500px;
+   }
+}
+.banner img {
+	width:100%;
+	height: 100%;
+	display: block;
+}
+/*行业动态*/
+.trends.marginAuto {
+	width: 1200px;
+}
+.trends {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+.trends .content {
+	padding-top: 40px;
+}
+.sidebar {
+	margin-right: 65px;
+}
+.sidebar li {
+	font-size: 24px;
+	padding: 64px 72px; 
+	position: relative;
+}
+.sidebar .hot, .sidebar .on {
+	background: #003371;
+}
+.sidebar .hot::after, .sidebar .on::after {
+	position: absolute;
+	content: '';
+	right: -50px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-top: 15px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 25px solid #003371;
+}
+.msg {
+	margin-bottom: 40px;
+	height: 160px;
+}
+.msg .text {
+	padding: 17px 0 0 39px;
+}
+.text a {
+	color: #868686;
+	font-size: 14px;
+	font-weight: 400;
+	display: block;
+	height: 20px;
+	transition: .2s all linear;
+}
+.text a:hover {
+	color: #003371;
+	font-size: 16px;
+}
+.text p {
+	margin-top: 8px;
+	font-size: 10px;
+	color: #868686;
+}

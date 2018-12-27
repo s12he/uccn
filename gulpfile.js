@@ -18,7 +18,7 @@ let path = {
 	imgPath: ['./src/**/images/**/*.{png, jpg, gif, ico}'],
 	jsPath: ['./src/**/**/*.js'],
 	iconPath: ['./src/**/**/*.{eot, svg, ttf, woff}'],
-	copyPath: ['./src/**/*.ico', './src/**/images/**/*.gif}']
+	copyPath: ['./src/**/*.ico', './src/**/images/**/*.gif']
 }
 
 //压缩js

@@ -1,0 +1,7 @@
+.sidebar .sidebarItem {
+	color: #003371;
+	cursor: pointer;
+}
+.sidebar .sidebarItem.on {
+	color: #fff;
+}
