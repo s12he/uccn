@@ -15,10 +15,8 @@ const HOST_ROOT = 'dist';
 let path = {
 	cssPath: ['./src/**/**/*.css'],
 	htmlPath: ['./src/**/**/*.html'],
-	imgPath: ['./src/**/images/**/*.{png, jpg, gif, ico}'],
+	imgPath: ['./src/**/images/**/*.*', './src/**/*.ico'],
 	jsPath: ['./src/**/**/*.js'],
-	iconPath: ['./src/**/**/*.{eot, svg, ttf, woff}'],
-	copyPath: ['./src/**/*.ico', './src/**/images/**/*.gif']
 }
 
 //压缩js
@@ -71,12 +69,13 @@ gulp.task('prew', function () {
 });
 
 // 图标复制
+/*
 gulp.task('copy', function() {
 	return gulp.src(path.copyPath)
 		.pipe(gulp.dest('./dist'))
 		.pipe(connect.reload());
 });
-
+*/
 
 var browser = os.platform() === 'linux' ? 'google-chrome' : (
   os.platform() === 'darwin' ? 'google chrome' : (
@@ -109,11 +108,11 @@ gulp.task('watchPrew', function(done) {
 	//当图片修改的时候自动压缩同步
 	gulp.watch(path.imgPath, gulp.series('imagemin'));
 	//字体图标改变时自动复制
-	gulp.watch(path.iconPath, gulp.series('copy'));
+	// gulp.watch(path.iconPath, gulp.series('copy'));
 	done();
 });
 
 
-gulp.task('default', gulp.series('prew', 'babel', 'cssmin', 'imagemin', 'copy', 'watchPrew','connect', function(done) {
+gulp.task('default', gulp.series('prew', 'babel', 'cssmin', 'imagemin', 'watchPrew','connect', function(done) {
 	done();
 }));
