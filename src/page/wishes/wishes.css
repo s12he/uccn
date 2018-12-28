@@ -1,0 +1,66 @@
+/*bannerÍ¼*/
+.banner {
+	width: 100%;
+	max-height: 500px;
+}
+@media screen and (min-width: 1919px){
+   .banner {
+      height: 500px;
+   }
+}
+.banner img {
+	width:100%;
+	height: 100%;
+	display: block;
+}
+
+/*×Ü²Ã¼ÄÓï*/
+.about.marginAuto {
+	width: 1200px;
+	margin: 85px auto;
+	text-align: center;
+}
+.about .title {
+	color: #4D4D4D;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+.about .title-en {
+	color: #808080;
+	font-size: 38px;
+	letter-spacing: 5px;
+}
+.hr {
+	height: 2px;
+	background: #999999;
+	margin-top: 40px;
+}
+.wishes {
+	margin-top: 100px;
+}
+.personMsg {
+	margin-left: 100px;
+	text-align: left;
+}
+.personMsg .intro {
+	font-size: 40px;
+	color: #003371;
+	margin-bottom: 36px;
+	line-height: 1;
+}
+.personMsg .text {
+	font-size: 20px;
+	color: #003371;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+article {
+	margin-top: 35px;
+	text-align: left;
+}
+article p {
+	color: #003371;
+	font-size: 20px;
+	text-indent: 2em;
+	line-height: 1.6;
+}

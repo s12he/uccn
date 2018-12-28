@@ -14,7 +14,7 @@ const HOST_ROOT = 'dist';
 
 let path = {
 	cssPath: ['./src/**/**/*.css'],
-	htmlPath: ['./src/**/**/*.html'],
+	htmlPath: ['./src/**/**/*.html', './src/index.html'],
 	imgPath: ['./src/**/images/**/*.*', './src/**/*.ico'],
 	jsPath: ['./src/**/**/*.js'],
 }
@@ -89,7 +89,7 @@ gulp.task('connect', function() {
 		port: HOST_PORT,
 		livereload: true
 	});
-	const url = 'http://' + HOST_NAME + ':' + HOST_PORT + '/page/index/index.html';
+	const url = 'http://' + HOST_NAME + ':' + HOST_PORT + '/index.html';
 	return gulp.src('./gulpfile.js')
 		.pipe(open({
 		  	uri: url,

@@ -1,0 +1,103 @@
+/*banner图*/
+.banner {
+	width: 100%;
+	max-height: 500px;
+}
+@media screen and (min-width: 1919px){
+   .banner {
+      height: 500px;
+   }
+}
+.banner img {
+	width:100%;
+	height: 100%;
+	display: block;
+}
+
+.about.marginAuto {
+	width: 1200px;
+	margin: 85px auto;
+	text-align: center;
+}
+.about .title {
+	color: #4D4D4D;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+.about .title-en {
+	color: #808080;
+	font-size: 38px;
+	letter-spacing: 5px;
+}
+.hr {
+	height: 2px;
+	background: #999999;
+	margin-top: 30px;
+}
+/*企业文化*/
+.culture {
+	margin-top: 100px;
+	height: 806px;
+	background: url(../../assets/images/concept/main.png);
+}
+.cultureItem {
+	width: 620px;
+	height: 200px;
+	margin-bottom: 2px;
+	background: rgba(0, 51, 113, .8);
+	padding: 27px 30px 0 30px;
+	text-align: left;
+}
+.cultureItem {
+	font-size: 30px;
+}
+.cultureItem p {
+	margin-bottom: 55px;
+}
+.cultureItem span {
+	font-size: 20px;
+}
+.culture .cultureItem:nth-of-type(2) p {
+	margin-bottom: 10px;
+}
+.culture .cultureItem:nth-of-type(3) p {
+	margin-bottom: 30px;
+}
+/*核心价值*/
+.coreValue {
+	margin-top: 98px;
+}
+.coreValue .title {
+	font-size: 50px;
+	color: #003371;
+	text-align: left;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+.coreValue .content {
+	flex-wrap: wrap;
+}
+.content div {
+	width: 400px;
+	height: 500px;
+	transition: .3s all linear;
+}
+.content div:hover {
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	transform: scale(1.01);
+}
+.blue {
+	background: #003371;
+}
+.lightBlue {
+	background: #3475C5;
+}
+.headline {
+	padding-top: 40px;
+	font-size: 70px;
+	line-height: 1;
+}
+.content .text {
+	font-size: 32px;
+	line-height: 3.5;
+}
