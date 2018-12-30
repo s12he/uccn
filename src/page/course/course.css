@@ -1,4 +1,4 @@
-/*bannerͼ*/
+/*banner图*/
 .banner {
 	width: 100%;
 	max-height: 500px;
@@ -14,7 +14,7 @@
 	display: block;
 }
 
-/*�ܲü���*/
+/*市场概括*/
 .about.marginAuto {
 	width: 1200px;
 	margin: 85px auto;
@@ -35,33 +35,27 @@
 	background: #999999;
 	margin-top: 40px;
 }
-.wishes {
-	margin-top: 100px;
+.courseBox {
+	width: 800px;
+	margin: 100px auto 0;
 }
-.personMsg {
-	margin-left: 100px;
-	text-align: left;
-}
-.personMsg .intro {
+.module .time {
+	height: 70px;
+	line-height: 70px;
 	font-size: 40px;
-	color: #003371;
-	margin-bottom: 36px;
-	line-height: 1;
+	background: #003371;
+	border-radius: 70px;
+	letter-spacing: 6px;
+	margin-bottom: 20px;
 }
-.personMsg .text {
-	font-size: 20px;
-	color: #003371;
-	margin-bottom: 15px;
-	line-height: 1;
-}
-article {
-	margin-top: 35px;
+.module .text {
 	text-align: left;
+	text-indent: 1em;
+	font-size: 30px;
+	color: #000000;
+	letter-spacing: 4px;
+	line-height: 1.5;
 }
-article p {
-	color: #808080;
-	font-size: 20px;
-	text-indent: 2em;
-	line-height: 1.6;
-	text-align: justify;
+.courseBox .module:nth-of-type(2) {
+	margin-top: 50px;
 }

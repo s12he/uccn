@@ -32,7 +32,7 @@
 .hr {
 	height: 2px;
 	background: #999999;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 /*企业文化*/
 .culture {
@@ -79,7 +79,7 @@
 }
 .content div {
 	width: 400px;
-	height: 500px;
+	height: 300px;
 	transition: .3s all linear;
 }
 .content div:hover {
@@ -93,11 +93,13 @@
 	background: #3475C5;
 }
 .headline {
-	padding-top: 40px;
-	font-size: 70px;
+	padding: 40px 0 0 40px;
+	font-size: 50px;
 	line-height: 1;
+	text-align: left;
 }
 .content .text {
-	font-size: 32px;
-	line-height: 3.5;
+	margin-top: 32px;
+	font-size: 30px;
+	line-height: 1.5;
 }

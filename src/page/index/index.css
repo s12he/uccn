@@ -270,6 +270,8 @@ footer .title {
 }
 .right img {
 	margin-right: 15px;
+	width: 100px;
+	height: 100px;
 }
 .right {
 	align-items: flex-end;

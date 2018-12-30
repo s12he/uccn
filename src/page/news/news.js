@@ -2,6 +2,5 @@
 jQuery(".content").slide({
 	delayTime: 0,
 	titCell: '.sidebar li',
-	mainCell: '.trendsMessage',
-	trigger: 'click'
+	mainCell: '.trendsMessage'
 });

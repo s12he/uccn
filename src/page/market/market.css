@@ -14,7 +14,7 @@
 	display: block;
 }
 
-/*×Ü²Ã¼ÄÓï*/
+/*ÊÐ³¡¸ÅÀ¨*/
 .about.marginAuto {
 	width: 1200px;
 	margin: 85px auto;
@@ -35,33 +35,22 @@
 	background: #999999;
 	margin-top: 40px;
 }
-.wishes {
-	margin-top: 100px;
-}
-.personMsg {
-	margin-left: 100px;
+.marketBox {
+	margin-top: 95px;
 	text-align: left;
 }
-.personMsg .intro {
+.marketBox .title {
 	font-size: 40px;
 	color: #003371;
-	margin-bottom: 36px;
-	line-height: 1;
 }
-.personMsg .text {
+.marketBox .text {
+	margin-top: 30px;
+}
+.text p {
 	font-size: 20px;
-	color: #003371;
-	margin-bottom: 15px;
-	line-height: 1;
-}
-article {
-	margin-top: 35px;
-	text-align: left;
-}
-article p {
 	color: #808080;
-	font-size: 20px;
 	text-indent: 2em;
-	line-height: 1.6;
+	letter-spacing: 3px;
+	line-height: 1.7;
 	text-align: justify;
 }

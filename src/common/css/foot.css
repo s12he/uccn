@@ -21,6 +21,7 @@ footer {
 }
 .detailsBox {
 	justify-content: space-between;
+	align-items: center;
 }
 .detailsBox .left p {
 	font-size: 23px;
@@ -30,19 +31,54 @@ footer {
 	margin-bottom: 0px;
 }
 .detailsBox .right {
-	align-items: flex-end;
+	flex-direction: column;
 }
 .right img {
-	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+.right>div {
+	margin-bottom: 15px;
+}
+.right>div p {
+	font-size: 16px;
 }
 @media screen and (min-width: 1919px){
-   footer {
-      height: 500px;
-   }
    .footer-logo .title img {
    	width: auto;
    }
    .footer-logo .title span {
    	font-size: 100px;
    }
+}
+
+.left .text {
+	height: 220px;
+	width: 320px;
+	background: #101926;
+	text-align: left;
+}
+.left .title {
+	font-size: 38px;
+	color: #fff;
+	letter-spacing: 9px;
+}
+.left .title-en {
+	font-size: 26px;
+	letter-spacing: 2px;
+}
+.left .hr {
+	background: #0260D1;
+	width: 185px;
+	margin: 10px 0 20px 0;
+}
+.detailsBox .details p {
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: 1px;
+}
+.details p img {
+	margin-left: 14px;
+	vertical-align: top;
 }

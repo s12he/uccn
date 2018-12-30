@@ -41,7 +41,7 @@ header {
 	line-height: 25px;
 }
 .hiddenBox li a {
-	opacity: .9;
+	opacity: .5;
 }
 .hiddenBox li:hover a {
 	opacity: 1;

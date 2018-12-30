@@ -42,6 +42,9 @@
 .serveBox img {
 	padding: 20px 0 0 40px;
 }
+.serveBox .text {
+	margin-bottom: 50px;
+}
 .agencyMessage {
 	color: #1A1A1A;
 }
@@ -70,10 +73,10 @@
 .text .item:nth-of-type(2) span {
 	letter-spacing: 3px;
 }
-.need {
+/*.need {
 	justify-content: space-between;
 	margin-top: 17px;
-}
+}*/
 .circle {
 	display: inline-block;
 	width: 15px;
