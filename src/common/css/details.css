@@ -1,0 +1,28 @@
+.main {
+	width: 1200px;
+    margin: 85px auto;
+    color: grey;
+    text-align: center;
+}
+.main .title {
+	font-size: 25px;
+	color: #333333;
+	margin-bottom: 25px;
+}
+.main .text p {
+	font-size: 19px;
+	text-indent: 2em;
+	line-height: 1.5;
+	text-align: justify;
+	letter-spacing: 5px;
+}
+.main .text {
+	text-align: center;
+}
+.main .text img {
+	margin: 10px 0 50px 0;
+}
+.main .active {
+	font-size: 20px;
+	color: #333;
+}

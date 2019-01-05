@@ -76,6 +76,8 @@
 }
 .coreValue .content {
 	flex-wrap: wrap;
+	justify-content: center;
+	
 }
 .content div {
 	width: 400px;
@@ -84,7 +86,7 @@
 }
 .content div:hover {
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-	transform: scale(1.01);
+	transform: scale(1.05);
 }
 .blue {
 	background: #003371;

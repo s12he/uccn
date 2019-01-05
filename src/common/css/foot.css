@@ -24,7 +24,7 @@ footer {
 	align-items: center;
 }
 .detailsBox .left p {
-	font-size: 23px;
+	font-size: 25px;
 	margin-bottom: 12px;
 }
 .detailsBox .left p:nth-of-type(3) {
@@ -70,6 +70,7 @@ footer {
 .left .hr {
 	background: #0260D1;
 	width: 185px;
+	height: 1px;
 	margin: 10px 0 20px 0;
 }
 .detailsBox .details p {

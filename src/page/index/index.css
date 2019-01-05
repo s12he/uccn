@@ -7,7 +7,6 @@
 .marginAuto {
 	width: 1200px;
 	margin: 0 auto;
-	position: relative;
 }
 
 .bg {
@@ -108,6 +107,7 @@
 	letter-spacing: 5px;
 	text-align: left;
 	font-weight: lighter;
+	text-indent: 2em;
 }
 .arrows {
 	position: absolute;
@@ -228,8 +228,8 @@ footer .title {
 }
 .top {
 	position: absolute;
-	top: -60%;
-	left: 4%;
+	top: 14%;
+	left: 23%;
 	font-size: 20px;
 	cursor: pointer;
 }
@@ -284,22 +284,22 @@ footer .title {
 	text-align: left;
 }
 .left .title1 {
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: #fff;
 	letter-spacing: 9px;
 }
 .left .title-en {
-	font-size: 15px;
+	font-size: 1rem;
 	letter-spacing: 2px;
 }
 .left .hr {
 	background: #0260D1;
-	width: 185px;
+	width: 7.5rem;
 	margin: 5px 0 5px 0;
 }
 .address .details p {
 	margin-bottom: 3px;
-	font-size: 12px;
+	font-size: .8rem;
 	color: #999999;
 	letter-spacing: 1px;
 }
@@ -310,6 +310,9 @@ footer .title {
 .filing {
 	position: absolute;
 	width: 100%;
-	bottom: 1%;
+	bottom: 3%;
 	left: 0;
+}
+.mb-10 {
+	margin-bottom: 10px;
 }
