@@ -83,16 +83,27 @@
 .postItem {
 	height: 50px;
 	line-height: 50px;
-	width: 140px;
+	/*padding: 0 30px;*/
+	width: 190px;
 	background: #5C8FCC;
 	font-size: 20px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	margin-bottom: 30px;
 	cursor: pointer;
+	letter-spacing: 10px;
+}
+.postItem.tb {
+	letter-spacing: 2px;
+}
+.postItem.on.tb {
+	font-size: 20px;
+}
+.postItem.kj {
+	letter-spacing: 40px;
 }
 .postItem.on {
-	width: 160px;
+	width: 210px;
 	height: 60px;
 	line-height: 60px;
 	background: #E6E6E6;
@@ -102,7 +113,7 @@
 /*招聘详情*/
 .tab-content {
 	width: 470px;
-	padding: 10px 40px 0 40px;
+	padding: 10px 35px 0 35px;
 	color: #868686;
 	text-align: left;
 }
@@ -114,19 +125,24 @@
 	align-items: flex-end;
 }
 .tab-item div span {
-	font-size: 28px;
+	font-size: 21px;
 }
 
-.tab-item p, .tab-item div i {
+.tab-item div i {
 	font-size: 14px;
 }
 .tab-item div i {
 	height: 15px;
 }
 .weal {
+	font-size: 14px;
 	line-height: 1.6;
 	letter-spacing: 1px;
 	margin-top: 3px;
+}
+.weal.require {
+	font-size: 16px;
+	margin-top: 10px;
 }
 .tab-main {
 	height: 100%;

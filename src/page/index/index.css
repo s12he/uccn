@@ -107,7 +107,7 @@
 	letter-spacing: 5px;
 	text-align: left;
 	font-weight: lighter;
-	text-indent: 2em;
+	text-align: justify;
 }
 .arrows {
 	position: absolute;
@@ -163,7 +163,13 @@
 	top: 35%;
 	left: 54%;
 }
+.businessBox .enAll {
+	/*letter-spacing: 10px;*/
+}
 /*加入我们*/
+.aboutBox .enAll {
+	/*letter-spacing: 30px;*/
+}
 .about-bg {
 	background-image: url(../../assets/images/index/4.png);
 	height: 60%;
@@ -175,9 +181,9 @@
 	top: 24%;
 	left: 10.75%;
 }
-.aboutBox .hr {
+/*.aboutBox .hr {
 	margin: 60px 0 20px 0;
-}
+}*/
 /*右侧小方块重置*/
 .swiper-pagination-bullet {
 	width: 15px !important;

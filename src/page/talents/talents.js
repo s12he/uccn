@@ -12,8 +12,7 @@ jQuery(".slideText").slide({
 jQuery(".recruit-content").slide({
 	delayTime: 0,
 	titCell: '.postList li',
-	mainCell: '.tab-content',
-	trigger: 'click'
+	mainCell: '.tab-content'
 });
 
 // 长期招聘信息轮动

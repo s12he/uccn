@@ -47,9 +47,10 @@
 	background: rgba(0, 51, 113, .8);
 	padding: 27px 30px 0 30px;
 	text-align: left;
-}
-.cultureItem {
 	font-size: 30px;
+}
+.cultureItem:nth-of-type(1) p,.cultureItem:nth-of-type(2) p {
+	margin-bottom: 28px;
 }
 .cultureItem p {
 	margin-bottom: 55px;
@@ -57,12 +58,7 @@
 .cultureItem span {
 	font-size: 20px;
 }
-.culture .cultureItem:nth-of-type(2) p {
-	margin-bottom: 10px;
-}
-.culture .cultureItem:nth-of-type(3) p {
-	margin-bottom: 30px;
-}
+
 /*ºËÐÄ¼ÛÖµ*/
 .coreValue {
 	margin-top: 98px;
