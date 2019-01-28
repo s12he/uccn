@@ -8,7 +8,7 @@ jQuery(".slideText").slide({
 	mouseOverStop: false
 });
 
-// tab切换
+// 职位tab切换
 jQuery(".recruit-content").slide({
 	delayTime: 0,
 	titCell: '.postList li',
@@ -23,6 +23,58 @@ jQuery(".long").slide({
 	vis:4,
 	interTime:50
 });
+
+//职位介绍详情内容分页
+var index = [];
+for (var i = 0; i < $('.tab-main').length; i++) {
+	var num = 0;
+	index.push(num)
+	paging($('.tab-main:eq('+i+')'), index[i], i)
+}
+
+function paging(name, num, i) {
+	//隐藏所有jobUl,以及删除分页器高亮状态
+	function hideRemove(jobUl) {
+		for (var j = 0; j < jobUl.length; j++) {
+			name.find('.jobUl:eq('+j+')').hide();
+			name.find('.num:eq('+j+')').removeClass('active');
+		}
+	}
+	//显示当前jobUl,以及当前分页器页码
+	function showAdd(num) {
+		name.find('.jobUl:eq('+num+')').show();
+		name.find('.num:eq('+num+')').addClass('active')
+	}
+	//点击下一页
+	name.find('.next1').click(function() {
+		var jobUl = name.find('.jobUl')
+		num++;
+		if (num < jobUl.length) {
+			hideRemove(jobUl);
+			showAdd(num);
+		}else {
+			num = jobUl.length - 1
+		}
+	})
+	//点击上一页
+	name.find('.prev1').click(function() {
+		var jobUl = name.find('.jobUl')
+		num--;
+		if (num >= 0) {
+			hideRemove(jobUl);
+			showAdd(num);
+		}else{
+			num = 0;
+		}
+	})
+	//点击页码 
+	name.find('.num').click(function() {
+		hideRemove(name.find('.jobUl'));
+		showAdd(this.innerHTML - 1);
+		num = this.innerHTML - 1;
+	})
+}
+
 // 顶部导航
 jQuery(".headerNav").slide({ 
 	type:"menu", //效果类型

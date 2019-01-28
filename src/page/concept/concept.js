@@ -1,3 +1,12 @@
+
+if ($('.ydNav').hasClass('none')) {
+  $('.m>a').click(function() {
+    $(this).next('.hiddenBox').slideToggle("normal")
+  })
+  $('.ydNav').click(function() {
+    $('.pcNav').slideToggle('normal')
+  })
+}
 // 顶部导航
 jQuery(".headerNav").slide({ 
 	type:"menu", //效果类型

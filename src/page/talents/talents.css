@@ -117,32 +117,32 @@
 	color: #868686;
 	text-align: left;
 }
-.tab-item {
-	margin-bottom: 15px;
-}
-.tab-item>div {
+
+.jobTitle {
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.tab-item div span {
+.jobTitle span {
 	font-size: 21px;
+	font-weight: bold;
 }
 
-.tab-item div i {
+.jobTitle i {
 	font-size: 14px;
-}
-.tab-item div i {
 	height: 15px;
 }
-.weal {
-	font-size: 14px;
+.jobUl {
+	margin-top: 10px;
+}
+.jobUl li {
+	font-size: 15px;
 	line-height: 1.6;
 	letter-spacing: 1px;
-	margin-top: 3px;
+	
 }
-.weal.require {
-	font-size: 16px;
-	margin-top: 10px;
+.jobUl .require {
+	font-size: 17px;
+	font-weight: 600;
 }
 .tab-main {
 	height: 100%;
@@ -152,21 +152,21 @@
 .paging {
 	position: absolute;
 	bottom: 0;
-	left: 50px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .paging li {
-	font-size: 12px;
+	font-size: 14px;
 	cursor: pointer;
 }
 .paging ul {
 	align-items: center;
 }
 .num {
-	width: 12px;
-	height: 12px;
-	line-height: 12px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
 	text-align: center;
-	margin-right: 2px;
 }
 .prev1 {
 	margin-right: 20px;

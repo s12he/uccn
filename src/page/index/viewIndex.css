@@ -1,0 +1,183 @@
+@media screen and (max-width: 800px){
+	/*顶部导航栏*/
+	.pcNav {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 10%;
+		width: 100%;
+		text-align: left;
+		z-index: 11;
+	}
+	.m {
+		background: #032265;
+		padding: 0 10px;
+		margin: 0;
+	}
+	.m>a {
+		display: block;
+		opacity: 1;
+	}
+	.hiddenBox {
+		position: relative;
+		top: 0;
+	}
+	.hiddenBox li {
+		text-align: left;
+		background: #032265;
+	}
+	.hiddenBox li a {
+		display: block;
+		padding: 0 30px;
+		opacity: 1;
+		font-size: 18px;
+	}
+	.headrNav {
+		display: block;
+	}
+	.ydNav {
+		display: block;
+	}
+	.headerBox {
+		justify-content: space-between;
+	}
+	.marginAuto {
+		width: 90%;
+	}
+	.logo {
+		margin: 0;
+	}
+	.headerText {
+		margin-top: 33%;
+	}
+  	.headerText .title, .titleAll {
+  		font-size: 25px;
+  		margin-bottom: 20px;
+  		letter-spacing: 5px;
+  	}
+  	.headerText .text {
+  		padding: 0 40px;
+  		font-size: 15px;
+  	}
+  	.arrows {
+  		left: 47%;
+  		bottom: -30%;
+  	}
+  	.arrows i {
+  		width: 30px;
+  		height: 30px;
+  	}
+  	.details {
+  		width: 40%;
+  	}
+  	.enAll {
+  		font-size: 13px;
+  		letter-spacing: 0px;
+  	}
+  	.hr {
+  		height: 1px;
+  		margin: 15px 0 ;
+  		background: #fff;
+  	}
+  	.details .text {
+  		font-size: 15px;
+  		letter-spacing: 3px;
+  	}
+  	.businessBox {
+  		top: 35%;
+  		left: 50%;
+  	}
+  	.swiper-pagination-bullet {
+  		width: 10px !important;
+  		height: 10px !important;
+  		margin: 18px 0 !important;
+  	}
+  	footer .title {
+  		font-size: 20px;
+  		padding: 10px 0;
+  	}
+  	.top {
+  		top: 10%;
+  		left: 3%;
+  		font-size: 10px;
+  	}
+  	.right img {
+  		width: 85px;
+  		height: 85px;
+  	}
+  	.address {
+  		margin-top: 0px;
+  	}
+  	.address .marginAuto {
+  		justify-content: space-between;
+  		margin-top: 3%;
+  	}
+  	.address .left {
+  		width: 48%;
+  	}
+  	.left .title1 {
+  		font-size: 17px;
+  		letter-spacing: 7px;
+  	}
+  	.left .title-en {
+  		font-size: 11px;
+  	}
+  	.left .hr {
+  		width: 90px;
+  	}
+  	.address .footDetails p {
+  		margin-bottom: 0px;
+  		font-size: 12px;
+  	}
+  	.right>div.mb-10 {
+  		font-size: 13px;
+  	}
+  	.filing {
+  		bottom: 1%;
+  		font-size: 12px;
+  	}
+}
+
+@media screen and (max-width: 321px){
+	.logo {
+		font-size: 20px;
+	}
+  	.headerText .title, .titleAll {
+  		font-size: 20px;
+  	}
+  	.headerText .text {
+  		padding: 0 20px;
+  	}
+  	footer .title {
+  		padding: 10px 0;
+  	}
+  	.top {
+  		top: 13%;
+  	}
+  	.right img {
+  		width: 63px;
+  		height: 63px;
+  	}
+  	.address .marginAuto {
+  		margin-top: 2%;
+  		align-items: center;
+  	}
+  	.address .left {
+  		width: 60%;
+  	}
+  	.left .title1 {
+  		font-size: 15px;
+  	}
+  	.left .title-en {
+  		font-size: 9px;
+  	}
+  	.left .hr {
+  		width: 80px;
+  	}
+  	.right>div.mb-10 {
+  		font-size: 9px;
+  	}
+  	.filing {
+  		font-size: 9px;
+  	}
+}

@@ -11,7 +11,7 @@ header {
 }
 .headerNav {
 	margin-left: 15.294%;
-	min-width: 600px;
+	width: 600px;
 }
 .headerNav a {
 	color: #fff;
@@ -45,4 +45,99 @@ header {
 }
 .hiddenBox li:hover a {
 	opacity: 1;
+}
+/*移动端导航*/
+.none {
+	display: none;
+}
+.block {
+	display: block !important;
+}
+
+.hengxbox {
+	height: 34px;
+	width: 34px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+}
+.hengx {
+	width: 100%;
+	height: 3px;
+	background-color: #AAAAAA;
+	transition: transform 0.3s;
+}
+.hengx + .hengx {
+	margin-top: 5px;
+}
+@media screen and (max-width: 800px){
+	.viewHead {
+		padding-top: 3.3%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		display: block;
+		font-size: 20px;
+		height: 34px;
+		line-height: 34px;
+	}
+	.pcNav {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 44px;
+		width: 100%;
+		text-align: left;
+		z-index: 11;
+	}
+	.m {
+		background: #032265;
+		padding: 0 10px;
+		margin: 0;
+		height: auto;
+		line-height: 37px;
+	}
+	.m>a {
+		font-size: 18px;
+		display: block;
+		opacity: 1;
+		padding: 0 10px;
+	}
+	.hiddenBox {
+		position: relative;
+		top: 0;
+		padding: 0;
+	}
+	.hiddenBox li {
+		text-align: left;
+		background: #032265;
+	}
+	.hiddenBox li:hover {
+		background: rgba(0, 0, 0, .6);
+	}
+	.hiddenBox li a {
+		display: block;
+		padding: 0 30px;
+		opacity: 1;
+		font-size: 18px;
+		line-height: 34.4px;
+	}
+	.headerNav {
+		display: block;
+		margin: 0;
+		width: auto;
+	}
+	.ydNav {
+		display: block;
+	}
+	.headerBox {
+		justify-content: space-between;
+	}
+	.marginAuto {
+		width: 90%;
+	}
 }
