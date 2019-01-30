@@ -15,12 +15,21 @@
 }
 /*行业动态*/
 .video.marginAuto {
-	width: 1200px;
-	padding: 100px 0;
+	width: 75rem;
+	padding: 6.25rem 0;
 }
 .videoItem p {
 	text-align: center;
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: #003371;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 900px) {
+	.video.marginAuto {
+		width: 44rem;
+	}
+	.videoItem img {
+		width: 14.666rem;
+		height: 11rem;
+	}
 }

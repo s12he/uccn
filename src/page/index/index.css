@@ -42,7 +42,8 @@
 }
 /*头部介绍 */
 .header-bg {
-	background-image: url(../../assets/images/index/1.png);
+	background-image: url(../../assets/images/index/homepage.jpg);
+	display: none;
 }
 /*移动端导航*/
 .none {

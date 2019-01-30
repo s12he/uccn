@@ -6,11 +6,17 @@
 	color: #fff;
 }
 .imgBox {
-	width: 240px;
-	height: 160px;
+	width: 15rem;
+	height: 10rem;
 }
 .imgBox img {
 	width: 100%;
 	height: 100%;
 	display: block;
+}
+@media screen and (max-width: 900px){
+	.imgBox {
+		width: 14rem;
+		height: 10rem;
+	}
 }

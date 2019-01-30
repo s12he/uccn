@@ -16,59 +16,60 @@
 
 /*服务体系*/
 .about.marginAuto {
-	width: 1200px;
-	margin: 85px auto;
+	width: 75rem;
+	margin: 5.321rem auto;
 	text-align: center;
 }
 .about .title {
 	color: #4D4D4D;
-	font-size: 70px;
+	font-size: 4.375rem;
 	letter-spacing: 5px;
 }
 .about .title-en {
 	color: #808080;
-	font-size: 25px;
+	font-size: 1.562rem;
 	letter-spacing: 4px;
 }
 .hr {
 	height: 2px;
 	background: #999999;
-	margin-top: 40px;
+	margin-top: 2.5rem;
 }
 
 .serveBox {
 	align-items: flex-end;
 }
 .serveBox img {
-	padding: 20px 0 0 40px;
+	padding: 1.25rem 0 0 2.5rem;
 }
 .serveBox .text {
-	margin-bottom: 50px;
+	margin-bottom: 3.125rem;
 }
 .agencyMessage {
 	color: #1A1A1A;
 }
 .text .icon {
 	display: inline-block;
-	width: 32px;
-	height: 32px;
-	margin-right: 15px;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 0.937rem;
 	background-image: url(../../assets/images/serve/s.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .circleBg {
-	background-position: 0 -48px;
+	background-position: 0 -3rem;
 }
 .text .item {
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 .text .item:nth-of-type(2) {
 	margin-bottom: 0px;
 }
 .text span {
-	font-size: 24px;
-	letter-spacing: 10px;
+	font-size: 1.5rem;
+	letter-spacing: 0.625rem;
 }
 .text .item:nth-of-type(2) span {
 	letter-spacing: 3px;
@@ -79,20 +80,38 @@
 }*/
 .circle {
 	display: inline-block;
-	width: 15px;
-	height: 15px;
+	width: 0.937rem;
+	height: 0.937rem;
 	background: #003371;
 	border-radius: 50%;
-	margin-right: 20px;
+	margin-right: 1.25rem;
 }
 .need {
-	margin-bottom: 60px;
+	margin-bottom: 3.75rem;
 }
 .need span {
-	font-size: 16px;
+	font-size: 1rem;
 	letter-spacing: 2px;
 }
 .l p {
-	margin-bottom: 18px;
+	margin-bottom: 1.125rem;
 	text-align: left;
+}
+@media screen and (max-width: 900px) {
+	.about.marginAuto {
+		width: 44rem;
+	}
+	.about .title {
+		font-size: 3.8rem;
+	}
+	.serveBox img {
+		width: 30rem;
+		padding: 0;
+	}
+	.serveBox .text, .need, .l p, .text .item {
+		margin-bottom: 0rem;
+	}
+	.need span {
+		letter-spacing: 0;
+	}
 }

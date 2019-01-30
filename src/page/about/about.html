@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
 	<title>联系我们</title>
 	<link rel="stylesheet" type="text/css" href="../../common/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="about.css">
@@ -43,15 +43,7 @@
 		</div>
 	</section>
 	@@include('../../common/html/foot.html')
+	<script src="../../common/js/view.js"></script>
 	<script src="./about.js"></script>
-	<script>
-		var map = new BMap.Map("l-map");            // 创建Map实例
-		var local = new BMap.LocalSearch("长沙",   
-		            {
-		            	renderOptions: {map: map,autoViewport: true},
-		            	pageCapacity: 1
-		            });   
-		local.search("凯乐国际城9栋");
-	</script>
 </body>
 </html>

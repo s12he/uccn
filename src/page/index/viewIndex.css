@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 	/*顶部导航栏*/
 	.pcNav {
 		display: none;
@@ -10,7 +10,7 @@
 		z-index: 11;
 	}
 	.m {
-		background: #032265;
+		background: #122756;
 		padding: 0 10px;
 		margin: 0;
 	}
@@ -24,7 +24,7 @@
 	}
 	.hiddenBox li {
 		text-align: left;
-		background: #032265;
+		background: #122756;
 	}
 	.hiddenBox li a {
 		display: block;
@@ -136,6 +136,12 @@
   		bottom: 1%;
   		font-size: 12px;
   	}
+    .banner-video {
+      display: none;
+    }
+    .header-bg {
+      display: block;
+    }
 }
 
 @media screen and (max-width: 321px){

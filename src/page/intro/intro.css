@@ -15,23 +15,23 @@
 }
 
 .intro.marginAuto {
-	width: 1200px;
-	margin: 85px auto;
+	width: 75rem;
+	margin: 5.321rem auto;
 }
 .intro {
 	position: relative;
-	height: 1443px;
+	height: 90.187rem;
 }
 .intro .title {
 	color: #4D4D4D;
-	font-size: 70px;
+	font-size: 4.375rem;
 	letter-spacing: 5px;
 }
 .intro .title-en {
 	color: #808080;
-	font-size: 38px;
+	font-size: 2.375rem;
 	letter-spacing: 5px;
-	margin-bottom: 55px;
+	margin-bottom: 3.437rem;
 }
 .tower {
 	position: absolute;
@@ -39,13 +39,32 @@
 	right: 0;
 }
 .textBox {
-	width: 740px;
+	width: 46.25rem;
 }
 .textBox .text {
-	font-size: 28px;
+	font-size: 1.75rem;
 	color: #808080;
 	text-indent: 2em;
 	text-align: justify;
 	letter-spacing: 4px;
 	line-height: 1.5;
+}
+@media screen and (max-width: 900px){
+	.intro.marginAuto, .textBox {
+		width: 44rem;
+	}
+	.textBox {
+		width: 25rem;
+	}
+	.intro.marginAuto img {
+		width: 24rem;
+		height: 85rem;
+	}
+	.intro {
+		height: 97rem;
+	}
+	.tower {
+		top: auto;
+		bottom: 0;
+	}
 }

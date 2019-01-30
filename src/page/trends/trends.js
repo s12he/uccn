@@ -1,3 +1,6 @@
+if ($('.ydNav').hasClass('none')) {
+  $('.text a').removeClass('scale')
+}
 // 顶部导航
 jQuery(".headerNav").slide({ 
 	type:"menu", //效果类型

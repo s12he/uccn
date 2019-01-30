@@ -15,59 +15,73 @@
 }
 /*联系我们*/
 .about.marginAuto {
-	width: 1200px;
-	margin: 85px auto;
+	width: 75rem;
+	margin: 5.321rem auto;
 	text-align: center;
 }
 .about .title {
 	color: #4D4D4D;
-	font-size: 70px;
+	font-size: 4.375rem;
 	letter-spacing: 5px;
 }
 .about .title-en {
 	color: #808080;
-	font-size: 37px;
+	font-size: 2.375rem;
 	letter-spacing: 4px;
 }
 .hr {
 	height: 2px;
 	background: #999999;
-	margin-top: 40px;
+	margin-top: 2.5rem;
 }
 .address {
-	padding: 100px 0;
+	padding: 6.25rem 0;
 }
 .address .text {
-	height: 400px;
-	width: 320px;
-	padding: 50px 0 0 50px;
+	height: 25rem;
+	width: 20rem;
+	padding: 3.125rem 0 0 3.125rem;
 	background: #101926;
 	text-align: left;
 }
 .address .title {
-	font-size: 38px;
+	font-size: 2.375rem;
 	color: #fff;
-	letter-spacing: 9px;
+	letter-spacing: 0.562rem;
 }
 .address .title-en {
-	font-size: 26px;
+	font-size: 1.625rem;
 	letter-spacing: 2px;
 }
 .address .hr {
 	background: #0260D1;
-	width: 185px;
-	margin: 10px 0 20px 0;
+	width: 11.562rem;
+	margin: 0.625rem 0 1.25rem 0;
 }
 .details p {
-	margin-bottom: 8px;
-	font-size: 14px;
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
 	color: #999999;
 	letter-spacing: 1px;
 }
 .details p img {
-	margin-left: 14px;
+	margin-left: 0.875rem;
 	vertical-align: top;
 }
 .location {
 	flex: 1;
+}
+@media screen and (max-width: 900px) {
+	.about.marginAuto {
+		width: 44rem;
+	}
+	.address .text {
+		padding: 2rem 0 0 2rem;
+	}
+	.details p img {
+		width: 7rem;
+	}
+	.details p {
+		margin: 0;
+	}
 }
