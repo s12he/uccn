@@ -5,6 +5,22 @@ body {
 	width: 1020px;
 	margin: 0 auto;
 }
+/*面包屑样式*/
+.crumbs {
+	width: 75rem;
+	margin: 2rem auto 0;
+	color: #000;
+}
+.crumbs li {
+	color: #4D4D4D;
+	font-size: 1rem;
+}
+.crumbs li span {
+	margin: 0 .3rem;
+}
+.crumbs li a {
+	color: #4D4D4D;
+}
 /*顶部导航*/
 header {
 	background: #003371;
@@ -12,6 +28,8 @@ header {
 .headerNav {
 	margin-left: 15.294%;
 	width: 600px;
+	/*padding: 10px 0;*/
+	background: #003371;
 }
 .headerNav a {
 	color: #fff;
@@ -72,7 +90,10 @@ header {
 .hengx + .hengx {
 	margin-top: 5px;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
+	.crumbs {
+		width: 44rem;
+	}
 	.viewHead {
 		padding-top: 3.3%;
 		display: flex;

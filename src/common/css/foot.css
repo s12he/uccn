@@ -17,7 +17,7 @@ footer {
 	font-size: 3.75rem;
 }
 .foot-details {
-	padding: 2.875rem 6.875rem;
+	padding: 1.4rem 6.875rem 2.875rem;
 }
 .detailsBox {
 	justify-content: space-between;
@@ -63,9 +63,10 @@ footer {
 	color: #fff;
 	letter-spacing: 0.562rem;
 }
-.left .title-en {
-	font-size: 1.625rem;
+.detailsBox .left .title-en {
+	font-size: 1.55rem;
 	letter-spacing: 2px;
+	margin-bottom: 0;
 }
 .left .hr {
 	background: #0260D1;
@@ -82,4 +83,22 @@ footer {
 .details p img {
 	margin-left: 0.875rem;
 	vertical-align: top;
+}
+/*友情链接,网站地图*/
+.blogroll {
+	width: 78.13%;
+	margin: 1rem auto 0;
+	/*justify-content: center;*/
+}
+.blogroll li {
+	margin-right: 1rem;
+}
+.blogroll li a {
+	color: #fff;
+	font-size: 1rem;
+}
+@media screen and (max-width: 900px){
+	.detailsBox .left .title-en {
+		font-size: 1.38rem;
+	}
 }

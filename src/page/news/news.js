@@ -4,3 +4,5 @@ jQuery(".content").slide({
 	titCell: '.sidebar li',
 	mainCell: '.trendsMessage'
 });
+
+Crumbs(2)

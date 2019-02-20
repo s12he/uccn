@@ -54,6 +54,9 @@ body::-webkit-scrollbar {
 .fr {
     float: right;
 }
+.center {
+    text-align: center;
+}
 .clearfix:after{
     content: "";
     display: block;

@@ -29,6 +29,35 @@
 .mb-10 {
 	margin-bottom: 0.625rem;
 }
+/*年会新闻*/
+.main .text .small {
+	margin: .625rem 0;
+}
+.main .text .alt {
+	text-indent: 0;
+}
+.main .text .center {
+	text-align: center;
+}
+.justify {
+	justify-content: space-around;
+}
+.chuyi {
+	flex-wrap: wrap;
+	margin: .5rem 0;
+}
+.cy {
+	width: 50%;
+	text-align: center;
+}
+.cy img {
+	width: 30rem;
+	height: 23rem;
+}
+.endImg {
+	width: 50rem;
+}
+
 @media screen and (max-width: 900px){
 	.main {
 		width: 44rem;
@@ -38,5 +67,17 @@
 	}
 	.main .title {
 		font-size: 2.5rem;
+	}
+	.justify {
+		display: block;
+	}
+	.chuyi {
+		display: block;
+	}
+	.cy {
+		width: 100%;
+	}
+	.main .text p {
+		letter-spacing: 3px;
 	}
 }

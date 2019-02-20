@@ -1,7 +1,3 @@
-if ($('.ydNav').hasClass('none')) {
-  $('.text a').removeClass('scale')
-}
-// 顶部导航
 jQuery(".headerNav").slide({ 
 	type:"menu", //效果类型
 	titCell:".m", // 鼠标触发对象
@@ -10,7 +6,5 @@ jQuery(".headerNav").slide({
 	delayTime:200, // 效果时间
 	triggerTime:0, //鼠标延迟触发时间
 	returnDefault:true,  //返回默认状态
-	defaultIndex: 3
+	defaultIndex: 6
 });
-
-Crumbs(2)

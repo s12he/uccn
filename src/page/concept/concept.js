@@ -10,3 +10,5 @@ jQuery(".headerNav").slide({
 	returnDefault:true,  //返回默认状态
 	defaultIndex: 1
 });
+
+Crumbs(0)
