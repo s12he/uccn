@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="keywords" content="银行承兑汇票，商业承兑汇票，电票，商票，电子银行承兑汇票，电子商业承兑汇票，票据，贴现，票据贴现，票据融资，承兑汇票贴现，银行承兑汇票贴现，电子银行承兑汇票贴现，电子票据，电子承兑汇票，票票库，中灵，中灵科技有限公司">
-	<meta name="description" content="中灵科技集团是一家致力于经营服计算机网络平台的开发及建设；计算机网络系统工程服务 ；网络技术的研发；电子商务平台的开发建设；商务信息咨询；会议、 展览及相关服务的互联网科技公司。">
+	<meta name="description" content="中灵科技（集团）有限公司是一家运用大数据、云计算、人工智能等新兴技术的创新型互联网科技公司，推动供应链金融服务实体经济。中灵科技总部坐落在湖南长沙，集团旗下品牌：票票库票据流转平台，链企云供应链服务平台。">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0"/>
-	<title>中灵科技</title>
+	<title>中灵科技|中灵科技(集团)有限公司【官网】</title>
 	<link rel="stylesheet" type="text/css" href="./common/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./page/index/index.css">
 	<link rel="stylesheet" type="text/css" href="./common/css/swiper.min.css">
@@ -16,6 +16,29 @@
 	<script src="./common/js/swiper.min.js"></script>
 	<script src="./common/js/jquery.SuperSlide.2.1.js"></script>
 	<script src="./common/js/swiper.animate.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var swiper = new Swiper('.swiper-container', {
+			    direction: 'vertical',
+			    slidesPerView: 1,
+			    spaceBetween: 0,
+			    mousewheel: true,
+			    pagination: {
+			      el: '.swiper-pagination',
+			      clickable: true,
+			    },
+			    on:{
+			      init: function(){
+			        swiperAnimateCache(this); //隐藏动画元素 
+			        swiperAnimate(this); //初始化完成开始动画
+			      }, 
+			      slideChangeTransitionEnd: function(){ 
+			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+			      } 
+			    }
+			});
+		})
+	</script>
 </head>
 <body>
 	<div class="swiper-container">

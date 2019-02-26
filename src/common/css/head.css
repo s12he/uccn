@@ -28,7 +28,7 @@ header {
 .headerNav {
 	margin-left: 15.294%;
 	width: 600px;
-	/*padding: 10px 0;*/
+	/*padding: 0 0 10px 0;*/
 	background: #003371;
 }
 .headerNav a {
@@ -151,6 +151,7 @@ header {
 		display: block;
 		margin: 0;
 		width: auto;
+		padding: 0 0 10px 0;
 	}
 	.ydNav {
 		display: block;
