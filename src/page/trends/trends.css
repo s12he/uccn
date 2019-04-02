@@ -54,6 +54,7 @@
 }
 .msg .text {
 	padding: 1.07rem 0 0 2.437rem;
+	flex: 1;
 }
 .text a {
 	color: #868686;

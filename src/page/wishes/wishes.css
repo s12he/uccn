@@ -54,6 +54,13 @@
 	margin-bottom: 0.94rem;
 	line-height: 1;
 }
+.referral img {
+	width: 37.5rem;
+	height: 25rem;
+}
+.personMsg .name {
+	font-size: 1.6rem;
+}
 article {
 	margin-top: 2.187rem;
 	text-align: left;

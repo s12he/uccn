@@ -16,6 +16,16 @@
 	text-align: justify;
 	letter-spacing: 5px;
 }
+/*Ãû×Ö±êÌâ*/
+.main .text .name {
+	font-size: 1.4rem;
+	text-indent: 0;
+	font-weight: bold;
+	color: #333333;
+}
+.ewm-foot {
+	width: 50rem;
+}
 .main .text {
 	text-align: center;
 }
