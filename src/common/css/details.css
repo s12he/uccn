@@ -67,7 +67,9 @@
 .endImg {
 	width: 50rem;
 }
-
+b {
+	font-weight: bold;
+}
 @media screen and (max-width: 900px){
 	.main {
 		width: 44rem;

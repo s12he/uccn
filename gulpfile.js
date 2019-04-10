@@ -9,7 +9,7 @@ const open = require('gulp-open');
 const os = require('os');
 
 const HOST_NAME = 'localhost';
-const HOST_PORT = '8080';
+const HOST_PORT = '8081';
 const HOST_ROOT = 'dist';
 
 let path = {
@@ -28,6 +28,7 @@ gulp.task('babel',() => {
         .pipe(connect.reload());
 });
 //图片压缩
+/*
 gulp.task('imagemin', function () {
     return gulp.src(path.imgPath)
         .pipe(imgmin({
@@ -39,6 +40,7 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest('./dist'))
         .pipe(connect.reload());
 });
+*/
 
 // css压缩
 gulp.task('cssmin', function() {
@@ -106,13 +108,13 @@ gulp.task('watchPrew', function(done) {
 	//当css修改的时候自动压缩同步
 	gulp.watch(path.cssPath, gulp.series('cssmin'));
 	//当图片修改的时候自动压缩同步
-	gulp.watch(path.imgPath, gulp.series('imagemin'));
+	//gulp.watch(path.imgPath, gulp.series('imagemin'));
 	//字体图标改变时自动复制
 	// gulp.watch(path.iconPath, gulp.series('copy'));
 	done();
 });
 
-
-gulp.task('default', gulp.series('prew', 'babel', 'cssmin', 'imagemin', 'watchPrew','connect', function(done) {
+//'imagemin', 功能暂时不用
+gulp.task('default', gulp.series('prew', 'babel', 'cssmin', 'watchPrew','connect', function(done) {
 	done();
 }));
