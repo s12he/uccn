@@ -16,6 +16,13 @@
 	text-align: justify;
 	letter-spacing: 5px;
 }
+.main .text .explain {
+	text-indent: 0;
+	text-align: center;
+}
+.main .text img {
+	max-width: 100%;
+}
 /*名字标题*/
 .main .text .name {
 	font-size: 1.4rem;
@@ -38,6 +45,9 @@
 }
 .mb-10 {
 	margin-bottom: 0.625rem;
+}
+.mb-0 {
+	margin-bottom: 0 !important;
 }
 /*年会新闻*/
 .main .text .small {

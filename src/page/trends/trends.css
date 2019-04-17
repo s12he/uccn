@@ -17,6 +17,10 @@
 .trends.marginAuto {
 	width: 75rem;
 }
+.imgBox {
+    width: 15rem;
+    height: 10rem;
+}
 .trends {
 	margin-top: 6.25rem;
 	margin-bottom: 6.25rem;
