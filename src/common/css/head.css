@@ -1,13 +1,11 @@
-body {
-	font-size: 14px;
-}
+﻿
 .marginAuto {
-	width: 1020px;
+	width: 1000px;
 	margin: 0 auto;
 }
-/*面包屑样式*/
+/*脙忙掳眉脨录脩霉脢陆*/
 .crumbs {
-	width: 75rem;
+	width: 62.5rem;
 	margin: 2rem auto 0;
 	color: #000;
 }
@@ -21,50 +19,82 @@ body {
 .crumbs li a {
 	color: #4D4D4D;
 }
-/*顶部导航*/
+/*露楼虏驴碌录潞陆*/
 header {
-	background: #003371;
+	box-shadow: -2px 1px 10px rgba(0,0,0,.1);
+	border-top: 2px solid #e5472e;
+	background: #fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: #333;
 }
-.headerNav {
-	margin-left: 15.294%;
-	width: 600px;
-	/*padding: 0 0 10px 0;*/
-	background: #003371;
+.pcNav .on {
+	background: #e5472e;
+    border-bottom-right-radius: 10em;
+    border-bottom-left-radius: 10em; 
 }
-.headerNav a {
-	color: #fff;
-	opacity: .5;
+.pcNav .on a {
+	color: #fff !important;
 }
+header>div {
+	justify-content: space-between;
+}
+.logo {
+	width: 15.3125rem;
+    height: 4.375rem;
+    background: url(../../assets/images/index/logo2.png) left center no-repeat;
+    background-size: 15.3125rem auto;
+}
+
+
 .m {
-	height: 80px;
-	line-height: 80px;
-	margin: 0 18px;
-	padding: 0 6px;
+	height: 70px;
+	line-height: 70px;
+	margin-left: 10px;
 	position: relative;
 }
-.m.on>a {
-	opacity: 1;
+.m>a {
+	width: 85px;
+	display: block;
+	text-align: center;
+	color: #333;
 }
 .hiddenBox {
-	display: none;
 	position: absolute;
-	left: 0;
-	top: 80px;
+	top: 0;
 	width: 100%;
+	/*padding-top: 70px;*/
+	z-index: -1;
 	text-align: center;
-	padding: 5px 0;
-	background: #003371;
+	background: #E5472E;
+	border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: none;
 }
 .hiddenBox li {
-	line-height: 25px;
+	/*height: 4.375rem;
+    line-height: 4.375rem;*/
+    color: #fff;
 }
+
 .hiddenBox li a {
-	opacity: .5;
+	/*opacity: .5;*/
+	display: block;
+	color: #fff;
+	height: 2rem;
+	line-height: 2rem;
+}
+.hiddenBox li:nth-of-type(1) {
+	height: 4.375rem;
+	line-height: 4.375rem;
 }
 .hiddenBox li:hover a {
-	opacity: 1;
+	/*opacity: 1;*/
 }
-/*移动端导航*/
+/*脪脝露炉露脣碌录潞陆*/
 .none {
 	display: none;
 }
@@ -95,7 +125,6 @@ header {
 		width: 44rem;
 	}
 	.viewHead {
-		padding-top: 3.3%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -110,32 +139,42 @@ header {
 		display: none;
 		position: absolute;
 		right: 0;
-		top: 44px;
+		top: 34px;
 		width: 100%;
 		text-align: left;
 		z-index: 11;
 	}
 	.m {
-		background: #003371;
+		background: #003371 !important;
 		padding: 0 10px;
 		margin: 0;
 		height: auto;
 		line-height: 37px;
+		border-bottom-right-radius: 0!important;
+    	border-bottom-left-radius: 0!important;
+	}
+	.m .hiddenBox li:nth-of-type(1) {
+		display: none;
 	}
 	.m>a {
+		width: auto;
+		text-align: left;
 		font-size: 18px;
 		display: block;
-		opacity: 1;
+		color: #fff;
 		padding: 0 10px;
 	}
 	.hiddenBox {
 		position: relative;
 		top: 0;
 		padding: 0;
+		z-index: 1;
+		border-bottom-right-radius: 0!important;
+    	border-bottom-left-radius: 0!important;
 	}
 	.hiddenBox li {
 		text-align: left;
-		background: #032265;
+		background: #003371;
 	}
 	.hiddenBox li:hover {
 		background: rgba(0, 0, 0, .6);

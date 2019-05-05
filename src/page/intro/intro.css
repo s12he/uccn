@@ -15,12 +15,12 @@
 }
 
 .intro.marginAuto {
-	width: 75rem;
+	width: 62.5rem;
 	margin: 5.321rem auto;
 }
 .intro {
 	position: relative;
-	height: 90.187rem;
+	height: 70rem;
 }
 .intro .title {
 	color: #4D4D4D;
@@ -37,9 +37,10 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+	width: 40rem;
 }
 .textBox {
-	width: 46.25rem;
+	width: 43rem;
 }
 .textBox .text {
 	font-size: 1.75rem;

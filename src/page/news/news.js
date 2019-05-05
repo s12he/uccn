@@ -1,59 +1,113 @@
-// tab切换
-jQuery(".content").slide({
-	delayTime: 0,
-	titCell: '.sidebar li',
-	mainCell: '.trendsMessage'
+﻿if ($('.ydNav').hasClass('none')) {
+  $('.text a').removeClass('scale')
+}
+
+jQuery(".headerNav").slide({ 
+	type:"menu", 
+	titCell:".m", 
+	targetCell:".hiddenBox", 
+	effect:"slideDown",
+	delayTime:200, 
+	triggerTime:0, 
+	returnDefault:true,  
+	defaultIndex: 4
 });
+//tab高亮1
+var Ohref=window.location.href;
+var arrhref=Ohref.split("?id=");
+var active = arrhref[1];
 
-//职位介绍详情内容分页
-var index = [];
-for (var i = 0; i < $('.trendsItem').length; i++) {
-	var num = 0;
-	index.push(num)
-	paging($('.trendsItem:eq('+i+')'), index[i], i)
+//更新内容
+var params = {
+	pageNum: 1,
+	pageSize: 4,
+}
+function genxin(params) {
+	inquire(params).then(function(res) {
+		// console.log(res.data)
+		var list = res.data.list
+		pages = res.data.pages
+		var html = ''
+		for (var i = 0; i < list.length; i++) {
+
+			var src = ''
+			var text = list[i].content.replace(/<[^>]+>/g,"")
+			var img = list[i].content.match(/<img.*?src="(.*?)"[^>]*?>/);
+			if (img) {
+				src = img[1]
+			}else {
+				src = '../../assets/images/news/zanwu.png'
+			}
+
+			html += '<div class="msg flex"><div class="imgBox">'+
+			'<a href="../newsInfo/newsInfo.html?id='+ list[i].id +'" target="_blank"><img src="'+ src +'">'+
+			'</a></div><div class="text"><a href="../newsInfo/newsInfo.html?id='+ list[i].id +'" target="_blank">'+list[i].textTitle+'</a>'+
+			'<p>'+ text.substring(0,65) +'...</p></div></div>'
+		}
+		$('.page').html(html)
+		page(res.data.pages, params.pageNum)
+	})
 }
 
-function paging(name, num, i) {
-	//隐藏所有jobUl,以及删除分页器高亮状态
-	function hideRemove(page) {
-		for (var j = 0; j < page.length; j++) {
-			name.find('.page:eq('+j+')').hide();
-			name.find('.num:eq('+j+')').removeClass('active');
-		}
-	}
-	//显示当前page,以及当前分页器页码
-	function showAdd(num) {
-		name.find('.page:eq('+num+')').show();
-		name.find('.num:eq('+num+')').addClass('active')
-	}
-	//点击下一页
-	name.find('.next1').click(function() {
-		var page = name.find('.page')
-		num++;
-		if (num < page.length) {
-			hideRemove(page);
-			showAdd(num);
+//更新页码 
+function page(pages, num) {
+	var html = '<li class="prev1">上一页</li>'
+	for (var i = 0; i < pages; i++) {
+		if (num == i + 1) {
+			html += '<li class="num active" value="'+ (i+1) +'">'+ (i+1) +'</li>'
 		}else {
-			num = page.length - 1
+			html += '<li class="num" value="'+ (i+1) +'">'+ (i+1) +'</li>'
 		}
-	})
-	//点击上一页
-	name.find('.prev1').click(function() {
-		var page = name.find('.page')
-		num--;
-		if (num >= 0) {
-			hideRemove(page);
-			showAdd(num);
-		}else{
-			num = 0;
-		}
-	})
-	//点击页码 
-	name.find('.num').click(function() {
-		hideRemove(name.find('.page'));
-		showAdd(this.innerHTML - 1);
-		num = this.innerHTML - 1;
-	})
+	}
+	html += '<li class="next1">下一页</li>'
+	$('.paging ul').html(html)
 }
 
-Crumbs(2)
+//初始进来tab高亮
+$('.sidebarItem').removeClass('on')
+$('.sidebarItem:eq('+ active +')').addClass('on')
+params.typeId = active
+genxin(params)
+
+$('.sidebarItem').click(function() {
+	$('.sidebarItem').removeClass('on')
+	$(this).addClass('on')
+	params.pageNum = 1
+	params.typeId = $(this).attr('value')
+	genxin(params)
+})
+
+
+//x下一页
+var pages = ''
+
+$('.paging').on('click', '.next1', function() {
+	var pageActive = params.pageNum
+	pageActive++
+	// console.log(pages)
+	if (pageActive <= pages) {
+		params.pageNum = pageActive
+		genxin(params)
+	}
+})
+
+//上一页
+$('.paging').on('click', '.prev1', function() {
+	var pageActive = params.pageNum
+	pageActive--
+	// console.log(pages)
+	if (pageActive > 0) {
+		params.pageNum = pageActive
+		genxin(params)
+	}
+})
+
+//点击页码
+$('.paging').on('click', '.num', function() {
+	params.pageNum = $(this).attr('value')
+	genxin(params)
+})
+
+Crumbs(2, active)
+
+

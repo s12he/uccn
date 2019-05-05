@@ -1,10 +1,30 @@
 .crumbs {
 	margin-top: 7.5rem;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	margin: 1rem 0;
+}
+strong {
+	/*font-weight: 400;*/
+	color: #333;
+}
+.ql-align-right {
+	text-align: right !important;
+}
+.ql-indent-2 {
+	text-indent: 2em;
+}
+.ql-indent-1 {
+	text-indent: 1em;
+}
+.ql-align-center {
+	text-align: center !important;
+}
 .main {
 	width: 62.5rem;
 	margin: 5.321rem auto;
-    color: grey;
+    color: #333;
     text-align: center;
 }
 .main .title {
@@ -14,18 +34,17 @@
 }
 .main .text p {
 	font-size: 1.187rem;
-	text-indent: 2em;
+	/*text-indent: 2em;*/
 	line-height: 1.5;
-	text-align: justify;
+	text-align: left;
+	/*text-align: justify;*/
 	letter-spacing: 5px;
 }
 .main .text .explain {
 	text-indent: 0;
 	text-align: center;
 }
-.main .text img {
-	max-width: 100%;
-}
+
 /*Ãû×Ö±êÌâ*/
 .main .text .name {
 	font-size: 1.4rem;
@@ -40,7 +59,9 @@
 	text-align: center;
 }
 .main .text img {
-	margin: 0.625rem 0 2.125rem 0;
+	max-width: 100%;
+	display: block;
+	margin: 0.625rem auto 1.125rem;
 }
 .main .active {
 	font-size: 1.25rem;
@@ -87,9 +108,7 @@ b {
 	.main {
 		width: 44rem;
 	}
-	.main .text img {
-		width: 40rem;
-	}
+	
 	.main .title {
 		font-size: 2.5rem;
 	}

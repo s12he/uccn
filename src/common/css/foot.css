@@ -1,104 +1,69 @@
-/*footer*/
 footer {
-	background: #101926;
+	background: #f0f0f0;
+    color: #fff;
+    padding: 3rem 0 2rem;
+    z-index: 3;
+    position: relative;
 }
-.footer-logo {
-	justify-content: center;
-	border-bottom: 2px solid #fff;
-}
-.footer-logo .title {
+.aboutUs {
 	text-align: center;
-	padding: 1.25rem 0;
-}
-.footer-logo .title img {
-	width: 5rem;
-}
-.footer-logo .title span {
-	font-size: 3.75rem;
-}
-.foot-details {
-	padding: 1.4rem 6.875rem 2.875rem;
-}
-.detailsBox {
-	justify-content: space-between;
-	align-items: center;
-}
-.detailsBox .left p {
-	font-size: 1.38rem;
-	margin-bottom: 0.75rem;
-}
-.detailsBox .left p:nth-of-type(3) {
-	margin-bottom: 0px;
-}
-.detailsBox .right {
-	flex-direction: column;
-}
-.right img {
-	width: 6.25rem;
-	height: 6.25rem;
-}
-.right>div {
-	margin-bottom: 0.937rem;
-}
-.right>div p {
-	font-size: 1rem;
-}
-@media screen and (min-width: 1919px){
-   .footer-logo .title img {
-   	width: auto;
-   }
-   .footer-logo .title span {
-   	font-size: 100px;
-   }
 }
 
-.left .text {
-	height: 13.75rem;
-	width: 20rem;
-	background: #101926;
-	text-align: left;
+.aboutUs a i, .aboutUs a em {
+	display: inline-block;
+    width: 1.25rem;
+    height: 1.125rem;
+    position: relative;
+    margin-left: .625rem;
+    top: .2rem;
 }
-.left .title {
-	font-size: 2.375rem;
-	color: #fff;
-	letter-spacing: 0.562rem;
+.aboutUs a i {
+	background: url('../../assets/images/index/weibo1.png');
 }
-.detailsBox .left .title-en {
-	font-size: 1.55rem;
-	letter-spacing: 2px;
-	margin-bottom: 0;
+.aboutUs a em {
+	background: url('../../assets/images/index/smallEwm.png');
 }
-.left .hr {
-	background: #0260D1;
-	width: 11.563rem;
-	height: 1px;
-	margin: 0.625rem 0 1.25rem 0;
+.aboutUs .ewmCode {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 9.5rem;
+	height: 9.5rem;
+	background: url('../../assets/images/index/ewm.png')no-repeat;
+	background-size: contain;
+	transition: .5s all linear;
+	display: none;
 }
-.detailsBox .details p {
-	margin-bottom: 0.5rem;
-	font-size: 0.875rem;
-	color: #999999;
-	letter-spacing: 1px;
+.aboutUs a:hover {
+	color: #db251d;
 }
-.details p img {
-	margin-left: 0.875rem;
-	vertical-align: top;
+.aboutUs a:hover i {
+	background: url('../../assets/images/index/weibo2.png');
 }
-/*友情链接,网站地图*/
-.blogroll {
-	width: 78.13%;
-	margin: 1rem auto 0;
-	/*justify-content: center;*/
+.aboutUs a:hover .ewmCode {
+	display: block;
 }
-.blogroll li {
-	margin-right: 1rem;
+.copy, .link {
+	text-align: center;
 }
-.blogroll li a {
-	color: #fff;
-	font-size: 1rem;
+.link {
+	margin: 1.25rem 0;
 }
-@media screen and (max-width: 900px){
-	.detailsBox .left .title-en {
-		font-size: 1.38rem;
-	}
+.link span:nth-of-type(1) {
+	color: #666870;
+    font-size: .875rem;
+}
+.copy a, .copy span, footer a {
+	color: #666870;
+    font-size: .875rem;
+}
+.aboutUs span, .link span {
+	display: inline-block;
+	margin: 0 .312rem;
+	color: #666870;
+}
+.copy img {
+	position: relative;
+	top: .3rem;
+	margin-left: .5rem;
 }

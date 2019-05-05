@@ -35,9 +35,9 @@ button,select,textarea{font-family:Helvetica; border:none;outline:none;
     -webkit-tap-highlight-color:transparent;}
 a{text-decoration:none; outline:none;}
 
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 /*文本省略号*/
 .cutFont {

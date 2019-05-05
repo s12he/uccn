@@ -57,7 +57,7 @@ gulp.task('prew', function () {
 	   		prefix: '@@',
 	   		basepath: '@file'
 	  	}))
-	  	.pipe(htmlmin({
+	  	/*.pipe(htmlmin({
 	  	    removeComments: true,//清除HTML注释
 	  	    collapseWhitespace: true,//压缩HTML
 	  	    removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
@@ -65,7 +65,7 @@ gulp.task('prew', function () {
 	  	    removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
 	  	    minifyJS: true,//压缩页面JS
 	  	    minifyCSS: true//压缩页面CSS
-	  	}))
+	  	}))*/
   		.pipe(gulp.dest('./dist'))
 	  	.pipe(connect.reload());
 });
@@ -117,4 +117,4 @@ gulp.task('watchPrew', function(done) {
 //'imagemin', 功能暂时不用
 gulp.task('default', gulp.series('prew', 'babel', 'cssmin', 'watchPrew','connect', function(done) {
 	done();
-}));
+}))

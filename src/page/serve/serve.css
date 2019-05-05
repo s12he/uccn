@@ -1,4 +1,4 @@
-/*bannerå›¾*/
+/*bannerÍ¼*/
 .banner {
 	width: 100%;
 	max-height: 500px;
@@ -14,9 +14,9 @@
 	display: block;
 }
 
-/*æœåŠ¡ä½“ç³»*/
+/*·şÎñÌåÏµ*/
 .about.marginAuto {
-	width: 75rem;
+	width: 62.5rem;
 	margin: 5.321rem auto;
 	text-align: center;
 }
@@ -40,6 +40,7 @@
 	align-items: flex-end;
 }
 .serveBox img {
+	width: 46rem;
 	padding: 1.25rem 0 0 2.5rem;
 }
 .serveBox .text {

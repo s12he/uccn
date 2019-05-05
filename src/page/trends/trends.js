@@ -10,7 +10,7 @@ jQuery(".headerNav").slide({
 	delayTime:200, // 效果时间
 	triggerTime:0, //鼠标延迟触发时间
 	returnDefault:true,  //返回默认状态
-	defaultIndex: 3
+	defaultIndex: 4
 });
 
-Crumbs(2)
+// Crumbs(2)
