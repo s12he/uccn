@@ -60,7 +60,7 @@ strong {
 }
 .main .text img {
 	max-width: 100%;
-	display: block;
+	/*display: block;*/
 	margin: 0.625rem auto 1.125rem;
 }
 .main .active {

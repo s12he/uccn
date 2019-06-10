@@ -17,6 +17,15 @@ var Ohref=window.location.href;
 var arrhref=Ohref.split("?id=");
 var active = arrhref[1];
 
+//title标签
+if (active == 0) {
+	$('title').html('中灵科技集团公告|中灵科技');
+}else if (active == 1) {
+	$('title').html('中灵集团新闻|中灵科技');
+}else if (active == 2) {
+	$('title').html('行业新闻|中灵科技');
+}
+
 //更新内容
 var params = {
 	pageNum: 1,
@@ -51,16 +60,26 @@ function genxin(params) {
 
 //更新页码 
 function page(pages, num) {
-	var html = '<li class="prev1">上一页</li>'
-	for (var i = 0; i < pages; i++) {
-		if (num == i + 1) {
-			html += '<li class="num active" value="'+ (i+1) +'">'+ (i+1) +'</li>'
-		}else {
-			html += '<li class="num" value="'+ (i+1) +'">'+ (i+1) +'</li>'
-		}
-	}
-	html += '<li class="next1">下一页</li>'
-	$('.paging ul').html(html)
+	// var html = '<ul class="flex"><li class="prev1">上一页</li>'
+	// for (var i = 0; i < pages; i++) {
+	// 	if (num == i + 1) {
+	// 		html += '<li class="num active" value="'+ (i+1) +'">'+ (i+1) +'</li>'
+	// 	}else {
+	// 		html += '<li class="num" value="'+ (i+1) +'">'+ (i+1) +'</li>'
+	// 	}
+	// }
+	// html += '<li class="next1">下一页</li></ul>'
+	// $('.paging').html(html)
+	$('.paging').pagination({
+	    mode: 'fixed',
+	    pageCount: pages,
+	    current: num,
+	    callback: function(e) {
+	    	params.pageNum = e.getCurrent()
+			genxin(params)
+	    }
+	});
+
 }
 
 //初始进来tab高亮
@@ -79,34 +98,34 @@ $('.sidebarItem').click(function() {
 
 
 //x下一页
-var pages = ''
+// var pages = ''
 
-$('.paging').on('click', '.next1', function() {
-	var pageActive = params.pageNum
-	pageActive++
-	// console.log(pages)
-	if (pageActive <= pages) {
-		params.pageNum = pageActive
-		genxin(params)
-	}
-})
+// $('.paging').on('click', '.next1', function() {
+// 	var pageActive = params.pageNum
+// 	pageActive++
+// 	// console.log(pages)
+// 	if (pageActive <= pages) {
+// 		params.pageNum = pageActive
+// 		genxin(params)
+// 	}
+// })
 
-//上一页
-$('.paging').on('click', '.prev1', function() {
-	var pageActive = params.pageNum
-	pageActive--
-	// console.log(pages)
-	if (pageActive > 0) {
-		params.pageNum = pageActive
-		genxin(params)
-	}
-})
+// //上一页
+// $('.paging').on('click', '.prev1', function() {
+// 	var pageActive = params.pageNum
+// 	pageActive--
+// 	// console.log(pages)
+// 	if (pageActive > 0) {
+// 		params.pageNum = pageActive
+// 		genxin(params)
+// 	}
+// })
 
-//点击页码
-$('.paging').on('click', '.num', function() {
-	params.pageNum = $(this).attr('value')
-	genxin(params)
-})
+// //点击页码
+// $('.paging').on('click', '.num', function() {
+// 	params.pageNum = $(this).attr('value')
+// 	genxin(params)
+// })
 
 Crumbs(2, active)
 

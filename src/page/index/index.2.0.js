@@ -108,6 +108,7 @@
 			if (i == 0) {
 				$('#'+ id +' .msgTitle a').attr('href', './page/news/news.html?id='+ gg.typeId)
 				$('#'+ id +' .textTitle').html(list[i].textTitle)
+				$('#'+ id +' .textTitle').attr('title', list[i].textTitle)
 				$('#'+ id +' .textTitle').attr('href', './page/newsInfo/newsInfo.html?id='+ list[i].id)
 
 				var src = ''
@@ -124,7 +125,7 @@
 				$('#'+ id +' .lookMore').html('<a href="./page/news/news.html?id='+ gg.typeId +'">查看更多</a>')
 			}else {
 				html += '<li class="flex"><span class="cutFont">'+
-				'<a href="./page/newsInfo/newsInfo.html?id='+ list[i].id +'" target="_blank">'+ list[i].textTitle +'</a>'+
+				'<a href="./page/newsInfo/newsInfo.html?id='+ list[i].id +'" target="_blank" title="'+ list[i].textTitle +'">'+ list[i].textTitle +'</a>'+
 				'</span><em>'+ list[i].mydate +'</em></li>'
 			}
 		}

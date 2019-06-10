@@ -51,6 +51,22 @@
 	background: #003371;
 	color: #fff;
 }
+/*pagination样式*/
+.paging a, .paging span {
+	margin: 0 .3rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #868686;
+	color: #868686;
+}
+.paging .active, .paging a:hover, .paging span:hover {
+	background: #003371;
+	color: #fff;
+	border: none;
+}
 @media screen and (max-width: 900px){
 	.imgBox {
 		width: 14rem;

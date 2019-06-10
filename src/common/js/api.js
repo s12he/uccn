@@ -1,4 +1,5 @@
-var webUrl = 'http://39.108.211.20:8888'
+// var webUrl = 'http://39.108.211.20:8888'
+var webUrl = 'http://112.74.43.113:10101'
 var request = function (url, data) {
 	return new Promise(function (resolve, reject) {
 		$.ajax({
